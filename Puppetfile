@@ -21,6 +21,6 @@ mod 'liamjbennett-win_facts',               '0.0.2'
 mod "puppet/dotnet",                        '1.1.0'
 
 # Modules from Gitlab (needs to have your control-repo at minimum)
-mod 'puppet73',
-  :git    => 'git@github.com:padrien33/puppet73.git',
-  :branch => 'production'
+#mod 'puppet73',
+#  :git    => 'git@github.com:padrien33/puppet73.git',
+#  :branch => 'production'
