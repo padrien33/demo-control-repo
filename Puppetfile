@@ -12,15 +12,6 @@ mod "puppetlabs/powershell",                '2.1.2'
 mod "puppetlabs/reboot",                    '1.2.1'
 mod "puppetlabs/registry",                  '1.1.4'
 mod "puppetlabs/wsus_client",               '1.0.3'
-mod "puppet/download_file",                 '2.1.0'
-mod "puppet/windows_env",                   '2.3.0'
-mod "puppet/windows_eventlog",              '1.2.0'
-mod "puppet/windowsfeature",                '3.0.0'
-mod "puppet/windows_firewall",              '1.1.0'
-mod 'liamjbennett-win_facts',               '0.0.2'
-mod "puppet/dotnet",                        '1.1.0'
 
-# Modules from Gitlab (needs to have your control-repo at minimum)
-#mod 'puppet73',
-#  :git    => 'git@github.com:padrien33/puppet73.git',
-#  :branch => 'production'
+
+
