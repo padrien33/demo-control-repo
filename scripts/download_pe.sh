@@ -19,5 +19,6 @@ echo '  "puppet_enterprise::puppet_master_host": "YOUR_HOSTNAME",' >> pe.conf
 echo '}' >> pe.conf
 vim pe.conf
 ./puppet-enterprise-installer -c pe.conf
-
+wait
+puppet agent -t
 
