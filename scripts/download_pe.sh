@@ -12,8 +12,8 @@ wait
 #Setup password for the Web GUI and change the hostname to yours
 cd ${PE_SOURCE}
 echo '{' > pe.conf
-echo '  "console_admin_password": "",' >> pe.conf
-echo '  "puppet_enterprise::puppet_master_host": "",' >> pe.conf
+echo '  "console_admin_password": "YOUR_PASSWORD",' >> pe.conf
+echo '  "puppet_enterprise::puppet_master_host": "YOUR_HOSTNAME",' >> pe.conf
 echo '}' >> pe.conf
 vim pe.conf
 
