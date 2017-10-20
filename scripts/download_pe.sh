@@ -18,6 +18,6 @@ echo '  "console_admin_password": "YOUR_PASSWORD",' >> pe.conf
 echo '  "puppet_enterprise::puppet_master_host": "YOUR_HOSTNAME",' >> pe.conf
 echo '}' >> pe.conf
 vim pe.conf
-
+./puppet-enterprise-installer -c pe.conf
 
 
