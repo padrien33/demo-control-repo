@@ -26,7 +26,6 @@ mod 'puppetlabs-translate', '1.1.0'
 mod 'puppetlabs-azure', '1.2.0'
 mod 'puppetlabs-windows', '5.0.0'
 mod 'puppet-download_file',
-mod 'puppet-windows_env',
 mod 'puppet-windowsfeature',
 mod 'puppetlabs-acl',
 mod 'puppetlabs-chocolatey',
