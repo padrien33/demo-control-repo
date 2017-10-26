@@ -24,4 +24,4 @@ mod 'puppetlabs/aws'
 mod 'puppetlabs/reboot'
 mod 'puppetlabs-detect_wannacry'
 mod 'puppetlabs-windows', '5.0.0'
-
+mod 'puppetlabs-motd', '1.5.0'
