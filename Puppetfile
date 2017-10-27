@@ -5,7 +5,7 @@ forge "http://forge.puppetlabs.com"
 # Puppet Supported Modules
 
 mod 'puppetlabs/stdlib'
-mod 'puppetlabs/inifile'
+mod 'puppetlabs/inifile', '1.2.0'
 mod 'puppetlabs/concat'
 mod 'puppetlabs/vcsrepo'
 mod 'puppetlabs/firewall'
