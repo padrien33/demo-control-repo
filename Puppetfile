@@ -32,6 +32,6 @@ mod 'puppetlabs-dsc'
 mod 'puppetlabs-iis'
 mod 'puppetlabs-powershell'
 mod 'puppetlabs-wsus_client'
-mod 'puppetlabs-puppet_agent', '1.4.1'
+mod 'puppetlabs-puppet_agent'
 mod 'puppetlabs-apt', '4.3.0'
 
