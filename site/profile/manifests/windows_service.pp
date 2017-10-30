@@ -11,5 +11,29 @@ class profile::windows_service {
     ensure => 'stopped',
     enable   => 'false',
     }
+  service {'AxInstSV':
+    ensure => 'stopped',
+    enable   => 'false',
+    }
+  service {'bthserv':
+    ensure => 'stopped',
+    enable   => 'false',
+    }
+  service {'CDPUserSvc':
+    ensure => 'stopped',
+    enable   => 'false',
+    }
+  service {'PimIndexMaintenanceSvc':
+    ensure => 'stopped',
+    enable   => 'false',
+    }
+  service {'dmwappushservice':
+    ensure => 'stopped',
+    enable   => 'false',
+    }
+  service {'MapsBroker':
+    ensure => 'stopped',
+    enable   => 'false',
+    }
 }
 
