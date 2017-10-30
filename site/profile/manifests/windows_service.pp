@@ -4,6 +4,7 @@ class profile::windows_service {
     }
   service {'NcbService':
     ensure => 'stopped',
+    enable   => 'true',
     }
   service {'Spooler':
     ensure => 'stopped',
