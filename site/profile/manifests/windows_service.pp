@@ -23,7 +23,7 @@ class profile::windows_service {
     ensure => 'stopped',
     enable   => 'false',
     }
-  service {'PimIndexMaintenanceSvc':
+  service {'lfsvc':
     ensure => 'stopped',
     enable   => 'false',
     }
