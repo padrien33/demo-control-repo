@@ -1,7 +1,6 @@
 class profile::windows_service {
-  service { 'WpnService':
+  service {'WpnService':
     ensure => 'stopped',
-    enable => true,
-}
+  }
 }
 
