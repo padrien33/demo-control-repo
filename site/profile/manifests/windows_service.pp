@@ -1,14 +1,14 @@
 class profile::windows_service {
   service {'WpnService':
-    ensure => 'stopped',
+    ensure => 'false',
     }
   service {'NcbService':
     ensure => 'stopped',
-    enable   => 'true',
+    enable   => 'false',
     }
   service {'Spooler':
     ensure => 'stopped',
-    enable   => 'true',
+    enable   => 'false',
     }
 }
 
