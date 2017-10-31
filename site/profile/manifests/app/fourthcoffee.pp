@@ -1,4 +1,4 @@
-class profile::app::website_DSC(
+class profile::app::fourthcoffee(
   $websitename        = 'FourthCoffee',
   $zipname            = 'FourthCoffeeWebSiteContent.zip',
   $sourcerepo         = 'https://github.com/msutter/fourthcoffee/raw/master',
