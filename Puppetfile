@@ -36,4 +36,5 @@ mod 'puppetlabs-puppet_agent'
 mod 'puppetlabs-apt','2.0.1'
 mod 'puppet-windows_env', '2.3.0'
 mod 'puppetlabs-transition', '0.1.1'
+mod 'puppetlabs-detect_wannacry', '0.6.1'
 
