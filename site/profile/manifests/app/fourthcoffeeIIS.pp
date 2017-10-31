@@ -1,4 +1,4 @@
-
+class profile::app::fourthcoffeeIIS{
 $iis_features = ['Web-WebServer','Web-Scripting-Tools']
 
 iis_feature { $iis_features:
@@ -15,4 +15,5 @@ iis_site { 'minimal':
 file { 'minimal':
   ensure => 'directory',
   path   => 'c:\\inetpub\\minimal',
+  }
 }
