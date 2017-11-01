@@ -9,6 +9,12 @@ class profile::base {
     
         }
 ### Directory creation 
+
+file { 'c:/tmp':
+    ensure => 'directory',
+    owner => 'Pierre',
+    group => 'GSK',
+  }
 file { 'c:/tmp/GSK':
     ensure => 'directory',
     owner => 'Pierre',
