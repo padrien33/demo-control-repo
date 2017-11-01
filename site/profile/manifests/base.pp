@@ -28,12 +28,7 @@ file { 'c:/tmp/GSK':
   type   => dword,
   data   => "1",
 }
- ### Registry changes in order Windows Shutdown Event Tracker
- registry_value { 'HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Reliability\ShutdownReasonOn':
-  ensure => present,
-  type   => dword,
-  data   => "1",
-}
+
 ### CUSTOM APPLICATION FIREWALL RULE
   windows_firewall::exception { 'GSKrule':
     ensure       => present,
