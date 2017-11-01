@@ -1,5 +1,48 @@
 class profile::base {
-
-  #the base profile should include component modules that will be on all nodes
-
+  ### Creation of users
+  user { 'Pierre':
+    ensure   => present,
+        }
+   group { 'GSK':
+      ensure  => 'present',
+      members => ['Pierre'],
+    
+        }
+### Directory creation 
+file { 'c:/tmp/GSK':
+    ensure => 'directory',
+    owner => 'Pierre',
+    group => 'GSK',
+  }
+  
+ ### Permissions 
+  acl { 'c:/tmp/GSK':
+  permissions => [
+   { identity => 'Pierre', rights => ['full'] },
+   { identity => 'Local', rights => ['read'] }
+ ],
+}
+ ### Registry changes in order to enable IE enhanced security configuration
+ registry_value { 'HKLM\SOFTWARE\Microsoft\Active Setup\Installed Components\{A509B1A8-37EF-4b3f-8CFC-4F3A74704073}\IsInstalled':
+  ensure => present,
+  type   => dword,
+  data   => "1",
+}
+ ### Registry changes in order Windows Shutdown Event Tracker
+ registry_value { 'HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Reliability\ShutdownReasonOn':
+  ensure => present,
+  type   => dword,
+  data   => "1",
+}
+### CUSTOM APPLICATION FIREWALL RULE
+  windows_firewall::exception { 'TSErule':
+    ensure       => present,
+    direction    => 'in',
+    action       => 'Allow',
+    enabled      => 'yes',
+    protocol     => 'TCP',
+    local_port   => '8080',
+    display_name => 'GSK FireWall Rule',
+    description  => 'Inbound rule example for demo purposes',
+  }
 }
