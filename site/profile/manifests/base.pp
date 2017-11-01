@@ -35,7 +35,7 @@ file { 'c:/tmp/GSK':
   data   => "1",
 }
 ### CUSTOM APPLICATION FIREWALL RULE
-  windows_firewall::exception { 'TSErule':
+  windows_firewall::exception { 'GSKrule':
     ensure       => present,
     direction    => 'in',
     action       => 'Allow',
