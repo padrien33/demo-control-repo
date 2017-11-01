@@ -12,3 +12,4 @@
     type         => dword,
     data         => '0xFFFFFFFF',
   }
+}
