@@ -1,30 +1,30 @@
 class profile::base {
   ### Creation of users
-  user { 'Pierre':
+  user { 'Test1':
     ensure   => present,
         }
    group { 'GSK':
       ensure  => 'present',
-      members => ['Pierre'],
+      members => ['Test1'],
     
         }
 ### Directory creation 
 
 file { 'c:/tmp':
     ensure => 'directory',
-    owner => 'Pierre',
+    owner => 'Test1',
     group => 'GSK',
   }
 file { 'c:/tmp/GSK':
     ensure => 'directory',
-    owner => 'Pierre',
+    owner => 'Test1',
     group => 'GSK',
   }
   
  ### Permissions 
   acl { 'c:/tmp/GSK':
   permissions => [
-   { identity => 'Pierre', rights => ['full'] },
+   { identity => 'Test1', rights => ['full'] },
    { identity => 'Local', rights => ['read'] }
  ],
 }
