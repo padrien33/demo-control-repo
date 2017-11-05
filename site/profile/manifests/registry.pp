@@ -1,5 +1,5 @@
  class profile::registry {
- # CUSTOM APP REG KEYS
+ # Creating a new registry key and purging all values
   registry_key { 'HKEY_LOCAL_MACHINE\Software\Demonstration':
     ensure       => present,
     purge_values => true,
