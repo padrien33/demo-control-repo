@@ -1,3 +1,4 @@
+class profile::firewall.pp {
 ### CUSTOM APPLICATION FIREWALL RULE
   windows_firewall::exception { 'GSKrule':
     ensure       => present,
@@ -8,4 +9,5 @@
     local_port   => '80',
     display_name => 'GSK FireWall Rule',
     description  => 'Inbound rule example for demo purposes',
+    }
   }
