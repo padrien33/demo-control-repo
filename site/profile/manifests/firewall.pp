@@ -1,4 +1,4 @@
-class profile::firewall.pp {
+class profile::firewall {
 ### CUSTOM APPLICATION FIREWALL RULE
   windows_firewall::exception { 'GSKrule':
     ensure       => present,
