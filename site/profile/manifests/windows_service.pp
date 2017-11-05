@@ -31,7 +31,7 @@ class profile::windows_service {
     }
     
   # Disable CDPUserSvc  
-  service {'CDPUserSvc':
+  service {'CDPUserSvc_28b80f':
     ensure => 'stopped',
     enable   => 'false',
     }
