@@ -54,11 +54,6 @@ class profile::windows_service {
     enable   => 'false',
     }
     
-  # Disable Contact Data
-  service {'PimIndexMaintenanceSvc':
-    ensure => 'stopped',
-    enable   => 'false',
-    }
         
  # Disable Internet Connection Sharing (ICS)
   service {'SharedAccess':
@@ -173,18 +168,7 @@ class profile::windows_service {
     ensure => 'stopped',
     enable   => 'false',
     }   
-    
-  # Disable User Data Access
-  service {'UserDataSvc_28b80f':
-    ensure => 'stopped',
-    enable   => 'false',
-    }   
-
-  # Disable User Data Storage
-  service {'UnistoreSvc_28b80f':
-    ensure => 'stopped',
-    enable   => 'false',
-    } 
+   
     
   # Disable WalletService
   service {'WalletService':
@@ -228,12 +212,7 @@ class profile::windows_service {
     enable   => 'false',
     } 
     
-    
-   # Disable Windows Push Notifications User Service
-  service {'WpnUserService':
-    ensure => 'stopped',
-    enable   => 'false',
-    }    
+      
 
 }
 
