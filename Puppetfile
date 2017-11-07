@@ -41,3 +41,8 @@ mod 'puppet-windows_firewall', '1.1.0'
 mod 'puppetlabs-exec', '0.1.0'
 mod 'puppetlabs/git', '0.5.0'
 
+
+mod 'ipcrm-demo_cis',
+   :git => 'https://github.com/ipcrm/ipcrm-demo_cis.git'
+
+
