@@ -40,6 +40,7 @@ mod 'puppetlabs-detect_wannacry', '0.6.1'
 mod 'puppet-windows_firewall', '1.1.0'
 mod 'puppetlabs-exec', '0.1.0'
 mod 'puppetlabs/git', '0.5.0'
+mod 'cannonps-local_security_policy', '0.3.1'
 
 
 mod 'ipcrm-demo_cis',
