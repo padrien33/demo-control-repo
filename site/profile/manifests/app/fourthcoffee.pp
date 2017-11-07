@@ -1,9 +1,7 @@
 class profile::app::fourthcoffee(
   $websitename        = 'FourthCoffee',
-  $zipname            = 'CloudShop.zip',
   $zipname            = 'FourthCoffeeWebSiteContent.zip',
   $sourcerepo         = 'https://github.com/msutter/fourthcoffee/raw/master',
-  $sourcerepo         = 'https://s3-us-west-2.amazonaws.com/tseteam/files/sqlwebapp',
   $destinationpath    = 'C:\inetpub\FourthCoffee',
   $defaultwebsitepath = 'C:\inetpub\wwwroot',
   $zippath            = 'C:\tmp'
