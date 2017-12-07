@@ -41,7 +41,13 @@ mod 'puppet-windows_firewall', '1.1.0'
 mod 'puppetlabs-exec', '0.1.0'
 mod 'puppetlabs/git', '0.5.0'
 mod 'cannonps-local_security_policy', '0.3.1'
-
+#### cis
+mod 'abuxton-cis_benchmarks', '0.1.14'
+mod 'herculesteam-augeasproviders_core', '2.1.4'
+mod 'herculesteam-augeasproviders_pam', '2.1.1'
+mod 'fiddyspence-sysctl', '1.1.0'
+mod 'puppetlabs-concat', '4.1.1'
+mod 'kemra102-auditd', '2.2.0'
 
 mod 'ipcrm-demo_cis',
    :git => 'https://github.com/ipcrm/ipcrm-demo_cis.git'
