@@ -48,6 +48,7 @@ mod 'herculesteam-augeasproviders_pam', '2.1.1'
 mod 'fiddyspence-sysctl', '1.1.0'
 mod 'puppetlabs-concat', '4.1.1'
 mod 'kemra102-auditd', '2.2.0'
+mod 'trlinkin-noop', '0.1.0'
 
 mod 'ipcrm-demo_cis',
    :git => 'https://github.com/ipcrm/ipcrm-demo_cis.git'
