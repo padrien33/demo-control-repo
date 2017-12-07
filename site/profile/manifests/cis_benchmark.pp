@@ -1,5 +1,11 @@
 class profile::cis_benchmarks{
-
+ if !$::cis_noop {
+      $cis_noop = lookup('cis_noop', Boolean, 'first', false )
+    }
+    else{
+      $cis_noop = $::cis_noop
+    }
+   noop($cis_noop)
 
 
  $cis_ssh_settings ={
